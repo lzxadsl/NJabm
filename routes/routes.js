@@ -3,6 +3,8 @@
  * 路由访问配置
  */
 var index = require('./index');//相当于java中引用其他类
+var user = require('./users');//引入用户模块
 module.exports = function(app){
     app.get('/',index.index);//默认访问index类中的index方法
+    app.get('/login',user.login);//默认访问index类中的index方法
 };
