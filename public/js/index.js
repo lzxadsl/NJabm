@@ -11,7 +11,6 @@ indexApp.config(['$httpProvider', function($httpProvider) {
 ]);
 
 indexApp.controller('UserListCtrl',function($http,$scope){
-  console.log($scope.username);
   $scope.title = '欢迎光临';
 
   $scope.tasks = [];
