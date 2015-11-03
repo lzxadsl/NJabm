@@ -23,8 +23,8 @@ exports.login = function(req,res){
 
 //用户登入
 exports.doLogin = function(req,res){
-
+  console.log(req.res.body.user);
   user.count({username:req.body.username,password:req.body.password},function(err,data){
-
+    console.log(data);
   });
 };
